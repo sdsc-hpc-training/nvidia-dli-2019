@@ -1,9 +1,5 @@
-# Preparing for the SDSC Summer Institute: Logging onto Comet
+# Logging onto Comet
 
-
-[//]: # " Comment example "
-
-[//]: # ( Comment2 )
 
 In this exercise, you will use your class training account to log onto the Comet cluster. This exercise verifies that your account is working, that your laptop is properly configured, and that your Comet user environment is correctly setup.
 
