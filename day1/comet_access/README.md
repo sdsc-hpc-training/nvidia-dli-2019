@@ -5,6 +5,8 @@ The documents in this folder are intended to check your knowledge of Linux and t
 * [basic_linux_skills](https://github.com/sdsc-hpc-training/nvidia-dli-2019/tree/master/day1/comet_access/basic_linux_skills)
 * [running_gpu_jobs_on_comet](https://github.com/sdsc-hpc-training/nvidia-dli-2019/tree/master/day1/comet_access/running_gpu_jobs_on_comet.md)
 
+Note: if you have any difficulties completing this task, please contact Institute staff at <consult@sdsc.edu>.
+
 ##  Computer Requirements:
 
 * You will need to bring your own laptop for the workshop. This will be used both for running software locally and connecting to SDSC’s supercomputers.
