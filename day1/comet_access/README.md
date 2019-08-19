@@ -1,18 +1,19 @@
-# Preparing for the Summer Institute 2019
+# Preparing to run jobs on comet.sdsc.edu GPU Nodes
 
-You will get   the most out of the SDSC Summer Institute if you come well prepared. By brushing up on your knowledge of Linux and installing all necessary software on your laptop before arriving, you’ll be able to focus your attention on the skills and topics that are most relevant to high performance and data intensive computing.
-
-To help you get the most out of your week, this section containes a set of detailed start-up instructions, beginning with setting up your account and connecting to Comet to configuring your laptop for running visualization software. Please read the documents and exercises carefully, and complete all necessary steps before arriving in San Diego. Feel free to ask questions or if you have any problems with the start-up tasks
+The documents in this folder are intended to check your knowledge of Linux and to make sure you can install all the necessary software on your laptop that will help you run jobs on Comet. See:
+* [getting_stared](https://github.com/sdsc-hpc-training/nvidia-dli-2019/tree/master/day1/comet_access/basic_linux_skills)
+* [basic_linux_skills](https://github.com/sdsc-hpc-training/nvidia-dli-2019/tree/master/day1/comet_access/basic_linux_skills)
+* [running_gpu_jobs_on_comet](https://github.com/sdsc-hpc-training/nvidia-dli-2019/tree/master/day1/comet_access/running_gpu_jobs_on_comet.md)
 
 ##  Computer Requirements:
 
-* You will need to bring your own laptop for the summer institute. This will be used both for running software locally and connecting to SDSC’s supercomputers.
-
-* For visualization tutorial a mouse with scroll wheel is highly recommended (laptop track pads are very difficult to use for 3D navigation).
+* You will need to bring your own laptop for the workshop. This will be used both for running software locally and connecting to SDSC’s supercomputers.
 
 ##  Account Requirements:
 
-* You will be given an account on the SDSC Comet computer. Information on the account will be sent to you via email. Please complete the process of activating your account before the institute begins.
+* You will be given a temporary training account on the SDSC Comet computer. Information on the account will be sent to you via email. Please complete the process of activating your account before the institute begins. You'll have about 1 week to migrate any material off of the training account once the workshop is over.
+* If you wish to continue working on comet, you can request a trial account here: https://www.sdsc.edu/services/hpc/hpc_systems.html#comet
+* For longer term accounts, you will need to apply for an allocation. For more information, see:  https://portal.xsede.org/allocations/announcements#types-trial
 
 ## Software Requirements:
 The document below contains a list of software being used at the institute and installation instructions:
