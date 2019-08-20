@@ -1,0 +1,5 @@
+loading cuda module
+calling nvcc-smi
+/var/spool/slurmd/job22532827/slurm_script: line 17: nvcc-smi: command not found
+calling simple hello
+Hello, Physics 244 Class! You have 2 devices
