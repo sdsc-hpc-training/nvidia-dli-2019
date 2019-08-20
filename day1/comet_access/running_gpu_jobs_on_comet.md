@@ -1265,7 +1265,7 @@ on the node that job is assigned to:
   9 {
  10    int deviceCount;
  11    cudaGetDeviceCount( &deviceCount );
- 12    printf("Hello, Physics 244 Class! You have %d devices\n", deviceCount );
+ 12    printf("Hello, NVIDIA DLI Workshop! You have %d devices\n", deviceCount );
  13    return 0;
  14 }
 [comet-ln2:~/cuda/simple_hello] 
@@ -1427,7 +1427,7 @@ Submitted batch job 22532827
 [user@comet-ln2:~/cuda/simple_hello] cat simple_hello.22532827.comet-33-06.out 
 loading cuda module
 
-Hello, Physics 244 Class! You have 2 devices
+Hello, NVIDIA DLI Workshop! You have 2 devices
 
 [user@comet-ln2:~/cuda/simple_hello]
 
