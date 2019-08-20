@@ -31,13 +31,13 @@ Requirements:
     * [Using Scripts to Load Module Environments](#module-load-scripts)
     * [Module Error: command not found](#module-error)
 
-* [Compiling & Linking on CPUs](#compilers)
+* [Compiling & Linking](#compilers)
     * [Supported Compiler Types](#compilers-supported)
     * [Using the Intel Compilers](#compilers-intel)
     * [Using the PGI Compilers](#compilers-pgi)
     * [Using the GNU Compilers](#compilers-gnu)
     
-* [Running CPU Jobs on Comet](#running-jobs)
+* [Running Jobs on Comet](#running-jobs)
     * [Command Line Jobs](#running-jobs-cmdline)
     * [Batch Jobs using SLURM](#running-jobs-slurm)
     * [Slurm Commands](#running-jobs-slurm-commands)
