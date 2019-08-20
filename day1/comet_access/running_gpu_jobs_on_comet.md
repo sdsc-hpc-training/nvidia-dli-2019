@@ -31,10 +31,6 @@ Requirements:
     * [Module Error: command not found](#module-error)
 
 * [Compiling & Linking](#compilers)
-    * [Supported Compiler Types](#compilers-supported)
-    * [Using the Intel Compilers](#compilers-intel)
-    * [Using the PGI Compilers](#compilers-pgi)
-    * [Using the GNU Compilers](#compilers-gnu)
     
 * [Running Jobs on Comet](#running-jobs)
     * [Command Line Jobs](#running-jobs-cmdline)
@@ -282,10 +278,6 @@ PATH=/opt/gnu/gcc/bin:/opt/gnu/bin:/opt/mvapich2/intel/ib/bin:/opt/intel/compose
 [Back to Top](#top)
 <hr>
 
-
-
-[Back to Top](#top)
-<hr>
 ### <a name="module-error"></a>Module Error: command not found 
 
 Sometimes this error is encountered when switching from one shell to another or attempting to run the module command from within a shell script or batch job. The module command may not be inherited between the shells.  To keep this from happening, execute the following command:
@@ -305,8 +297,6 @@ Comet provides the Intel, Portland Group (PGI), and GNU compilers along with mul
 Other compilers and versions can be installed by Comet staff on request. For more information, see the user guide:
 http://www.sdsc.edu/support/user_guides/comet.html#compiling
 
-### <a name="compilers-supported"></a>Supported Compiler Types
-
 Comet compute nodes support several parallel programming models:
 * __MPI__: Default: Intel
    * Default Intel Compiler: intel/2013_sp1.2.144; Versions 2015.2.164 and 2016.3.210 available.
@@ -314,7 +304,7 @@ Comet compute nodes support several parallel programming models:
    * mvapich2_gdr: GPU direct enabled version
 * __OpenMP__: All compilers (GNU, Intel, PGI) have OpenMP flags.
 * __GPU nodes__: support CUDA, OpenACC.
-* __Hybrid modes__ are possible.
+* __Hybrid modes__ are supported.
 
 For more information on using different compilers, see the comet user guide at http://www.sdsc.edu/support/user_guides/comet.html
 
