@@ -1237,13 +1237,19 @@ Currently Loaded Modulefiles:
 [Back to Top](#top)
 <hr>
 
+
+
+
+
 ### <a name="hello-world-gpu"></a>GPU/CUDA Example: Hello World
 <b>Sections:</b>
 * [GPU Hello World: Compiling](#hello-world-gpu-compile)
+* [GPU Hello World: Interactive Job](#hello-world-gpu-interactive)
 * [GPU Hello World: Batch Script Submission](#hello-world-gpu-batch-submit)
 * [GPU Hello World: Batch Job Output](#hello-world-gpu-batch-output)
 
 #### <a name="hello-world-gpu-compile"></a>GPU Hello World: Compiling
+Note: You can compile on the login nodes, but to run the job you must be on a GPU node.
 Simple hello runs a cuda command to get the device count
 on the node that job is assigned to:
 ```
@@ -1280,6 +1286,68 @@ Check your environment and use the CUDA <b>`nvcc`</b> command:
 [comet-ln2:~/cuda/simple_hello] 
 
 ```
+
+### GPU Hello World: Interactive Job<a name="hello-world-gpu-interactive"></a>
+GPU nodes can be accessed via either the "gpu" or the "gpu-shared" partitions. To obtain an interactive node, use the `srun` command:
+```
+srun -t 01:00:00 --partition=gpu-shared --nodes=1 --ntasks-per-node=6 --gres=gpu:k80:1  --pty --wait=0 /bin/bash
+```
+if you have a reserved queue (as you will have during this workshop, use the reserve queue name):
+```
+srun -t 01:00:00 --partition=gpu-shared --nodes=1 --ntasks-per-node=6 \
+     --gres=gpu:k80:1 --reservation=RESERVATION_NAME --pty --wait=0 /bin/bash
+```     
+Load the CUDA and PGI compiler modules
+```
+[username@comet-30-04:~] module purge
+[username@comet-30-04:~] module load gnutools
+[username@comet-30-04:~] module load cuda
+[username@comet-30-04:~] module load pgi
+[username@comet-30-04:~] module list
+Currently Loaded Modulefiles:
+  1) gnutools/2.69   2) cuda/7.0        3) pgi/17.5
+
+```
+Check nvcc compiler version
+```
+[username@comet-30-04:~] nvcc --version
+[username@comet-30-04:~] nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2015 NVIDIA Corporation
+Built on Mon_Feb_16_22:59:02_CST_2015
+Cuda compilation tools, release 7.0, V7.0.2
+```
+Check installed GPUs with NVIDIA System Management Interface (nvidia-smi)
+```
+[username@comet-30-04:~] nvidia-smi
+Mon Aug 19 17:35:46 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 396.26                 Driver Version: 396.26                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           On   | 00000000:05:00.0 Off |                  Off |
+| N/A   35C    P8    26W / 149W |      0MiB / 12206MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           On   | 00000000:06:00.0 Off |                  Off |
+| N/A   35C    P8    29W / 149W |      0MiB / 12206MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           On   | 00000000:85:00.0 Off |                  Off |
+| N/A   36C    P8    26W / 149W |      0MiB / 12206MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           On   | 00000000:86:00.0 Off |                  Off |
+| N/A   30C    P8    27W / 149W |      0MiB / 12206MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+```
+
 
 #### <a name="hello-world-gpu-batch-submit"></a>GPU Hello World: Batch Script Submit
 
