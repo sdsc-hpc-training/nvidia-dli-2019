@@ -1,4 +1,4 @@
-# Preparing for the Summer Institute:  Basic Linux Skills
+# Accessing HPC Systems:  Basic Linux Skills
 [//]: # " Comment example "
 
 [//]: # ( Comment2 )
