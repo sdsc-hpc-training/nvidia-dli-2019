@@ -6,9 +6,6 @@ While many of the hands-on activities will be run on Comet, some sessions requir
  * [Preparation: Install `git`](#git)
  * [Preparation: Obtain a GitHub Account](#github)
  * [Preparation: Anaconda for Jupyter Notebooks](#anaconda)
- * [Plenary session: An Introduction to Singularity](#singularity)
- * [Parallel sessions: Machine Learning Overview](#mach-learn)
- 
 
 ### Preparation: Install `git` <a name="git"></a>
 
