@@ -17,7 +17,7 @@ Tuesday, August 20, 2019
 |12:00 PM	|Lunch Sponsored by NVIDIA |
 |12:30 PM	|Measuring and Improving Performance |
 |3:30 PM	|Accessing SDSC Comet GPUS (Mary Thomas) |
-|4:00 PM	|Utilizing SDSC Comet for Deep Learning (Marty Kandes, Paul Rodriquez) |
+|4:00 PM	|Utilizing SDSC Comet for Deep Learning (Paul Rodriquez) |
 |5:00 PM	|Wrap-up |
  
 ### Day 2- Accelerated Data Science Workflows with RAPID
@@ -28,5 +28,5 @@ Wednesday, August 21, 2019
 |8:30 AM	 |Welcome Coffee and Continental Breakfast, Sponsored by NVIDIA |
 |9:00 AM	 |Accelerated Data Science with RAPIDS |
 |12:00 PM	 |Lunch sponsored by SDSC Industry Partners Program (IPP) |
-1:00 PM	 |Utilizing SDSC Comet for Machine Learning and Data Science (Paul Rodriquez)  |
+1:00 PM	 | From Zero to RAPIDS: Utilizing RAPIDS on SDSC Comet for Machine Learning & Data Science (Marty Kandes)  |
 3:00 PM	 |Wrap-up |
