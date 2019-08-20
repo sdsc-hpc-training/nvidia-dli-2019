@@ -1,6 +1,6 @@
-# SDSC 2018 Webinar Series Topic: Introduction to Running Jobs on Comet 
+# Introduction to Running Jobs on Comet 
 
-Presented by Mary Thomas (SDSC,  <mpthomas@ucsd.edu> )
+Presented by Mary Thomas (SDSC,  <mthomas@sdsc.edu> )
 <hr>
 In this tutorial, you will learn how to compile and run jobs on Comet, where to run them, and how to run batch jobs.
 The commands below can be cut & pasted into the comet terminal window.
@@ -31,13 +31,13 @@ Requirements:
     * [Using Scripts to Load Module Environments](#module-load-scripts)
     * [Module Error: command not found](#module-error)
 
-* [Compiling & Linking](#compilers)
+* [Compiling & Linking on CPUs](#compilers)
     * [Supported Compiler Types](#compilers-supported)
     * [Using the Intel Compilers](#compilers-intel)
     * [Using the PGI Compilers](#compilers-pgi)
     * [Using the GNU Compilers](#compilers-gnu)
     
-* [Running Jobs on Comet](#running-jobs)
+* [Running CPU Jobs on Comet](#running-jobs)
     * [Command Line Jobs](#running-jobs-cmdline)
     * [Batch Jobs using SLURM](#running-jobs-slurm)
     * [Slurm Commands](#running-jobs-slurm-commands)
