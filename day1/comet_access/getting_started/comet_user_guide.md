@@ -1,4 +1,4 @@
-# Accessing HPC Systems::  Comet User Guide
+# Accessing HPC Systems:  Comet User Guide
 
 Please read the Comet user guide and familiarize yourself with the hardware, file systems, batch job submission, compilers and modules. The guide can be found here:
 
