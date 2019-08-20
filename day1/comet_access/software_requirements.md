@@ -1,4 +1,4 @@
-## Preparing for the Summer Institute: Software Requirements
+## NVIDIA DLI Institute - Running GPU Jobs on Comet:  Software Requirements
 
 While many of the hands-on activities will be run on Comet, some sessions require that customized software be installed on your laptop. Please perform the following software installations and file downloads before you arrive. Note: several of the preparation activities will provide information and guidance on how to install the required software components.
 
@@ -7,10 +7,8 @@ While many of the hands-on activities will be run on Comet, some sessions requir
  * [Preparation: Obtain a GitHub Account](#github)
  * [Preparation: Anaconda for Jupyter Notebooks](#anaconda)
  * [Plenary session: An Introduction to Singularity](#singularity)
- * [Plenary session: SeedMe2: Creating data centric websites for researchers and research projects](#seedme)
  * [Parallel sessions: Machine Learning Overview](#mach-learn)
- * [Parallel session: Scientific visualization with Visit ](#visit)
-
+ 
 
 ### Preparation: Install `git` <a name="git"></a>
 
