@@ -30,7 +30,6 @@ Requirements:
     * [Load and Check Modules and Environment](#load-and-check-module-env)
     * [Module Error: command not found](#module-error)
 
-* [Compiling & Linking](#compilers)
     
 * [Running Jobs on Comet](#running-jobs)
     * [Command Line Jobs](#running-jobs-cmdline)
@@ -38,7 +37,8 @@ Requirements:
     * [Slurm Commands](#running-jobs-slurm-commands)
 
 * [Compiling and Running GPU/CUDA Jobs](#comp-and-run-cuda-jobs)
-    * [GPU Hello World (GPU) ](#hello-world-gpu)
+   * [Compiling & Linking](#compilers)
+   * [GPU Hello World (GPU) ](#hello-world-gpu)
         * [GPU Hello World: Compiling](#hello-world-gpu-compile)
         * [GPU Hello World: Batch Script Submission](#hello-world-gpu-batch-submit)
         * [GPU Hello World: Batch Job Output](#hello-world-gpu-batch-output)
@@ -290,24 +290,6 @@ OR add this command to your shell script (including Slurm batch scripts)
 [Back to Top](#top)
 <hr>
 
-## <a name="compilers"></a>Compiling & Linking
-
-Comet provides the Intel, Portland Group (PGI), and GNU compilers along with multiple MPI implementations (MVAPICH2, MPICH2, OpenMPI). Most applications will achieve the best performance on Comet using the Intel compilers and MVAPICH2 and the majority of libraries installed on Comet have been built using this combination. 
-
-Other compilers and versions can be installed by Comet staff on request. For more information, see the user guide:
-http://www.sdsc.edu/support/user_guides/comet.html#compiling
-
-Comet compute nodes support several parallel programming models:
-* __MPI__: Default: Intel
-   * Default Intel Compiler: intel/2013_sp1.2.144; Versions 2015.2.164 and 2016.3.210 available.
-   * Other options: openmpi_ib/1.8.4 (and 1.10.2), Intel MPI, mvapich2_ib/2.1
-   * mvapich2_gdr: GPU direct enabled version
-* __OpenMP__: All compilers (GNU, Intel, PGI) have OpenMP flags.
-* __GPU nodes__: support CUDA, OpenACC.
-* __Hybrid modes__ are supported.
-
-For more information on using different compilers, see the comet user guide at http://www.sdsc.edu/support/user_guides/comet.html
-
 
 ## <a name="running-jobs"></a>Running Jobs on Comet
 
@@ -383,6 +365,25 @@ $ squeue -u $USER
 <hr>
 
 ## <a name="comp-and-run-cuda-jobs"></a>Compiling and Running GPU/CUDA Jobs
+
+### <a name="compilers"></a>Compiling & Linking
+
+Comet provides the Intel, Portland Group (PGI), and GNU compilers along with multiple MPI implementations (MVAPICH2, MPICH2, OpenMPI). Most applications will achieve the best performance on Comet using the Intel compilers and MVAPICH2 and the majority of libraries installed on Comet have been built using this combination. 
+
+Other compilers and versions can be installed by Comet staff on request. For more information, see the user guide:
+http://www.sdsc.edu/support/user_guides/comet.html#compiling
+
+Comet compute nodes support several parallel programming models:
+* __MPI__: Default: Intel
+   * Default Intel Compiler: intel/2013_sp1.2.144; Versions 2015.2.164 and 2016.3.210 available.
+   * Other options: openmpi_ib/1.8.4 (and 1.10.2), Intel MPI, mvapich2_ib/2.1
+   * mvapich2_gdr: GPU direct enabled version
+* __OpenMP__: All compilers (GNU, Intel, PGI) have OpenMP flags.
+* __GPU nodes__: support CUDA, OpenACC.
+* __Hybrid modes__ are supported.
+
+For more information on using different compilers, see the comet user guide at http://www.sdsc.edu/support/user_guides/comet.html
+
 
 Note: Comet provides both NVIDIA K80 and P100 GPU-based resources. These GPU nodes 
 are allocated as separate resources. Make sure you have enough allocations and that
