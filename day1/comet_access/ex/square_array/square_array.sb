@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name="square_array"
+#SBATCH --output="square_array.%j.%N.out"
+#SBATCH --partition=gpu-shared          # define GPU partition
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=6
+####SBATCH --gres=gpu:1         # define type of GPU
+#SBATCH --gres=gpu:2         # first available
+#SBATCH -t 00:05:00
+
+#Load the cuda module
+echo "loading cuda module"
+module load cuda
+
+#print device information via command line
+echo "calling nvcc-smi"
+nvcc-smi
+
+#Run the job
+echo "calling square_array." 
+./square_array
+
