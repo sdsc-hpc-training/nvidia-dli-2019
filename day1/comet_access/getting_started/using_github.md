@@ -1,4 +1,4 @@
-# Preparing for the Summer Institute: Using GitHub 
+# Accessing HPC Systems: Using GitHub 
 
 Tutorial material and software will be available via a GitHub repository that anyone can clone (download). Make sure your laptop can run git. 
 
