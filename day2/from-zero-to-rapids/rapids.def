@@ -6,7 +6,7 @@ OSVersion: xenial
 
     APPLICATION_NAME rapids
     APPLICATION_VERSION 0.8.0
-    APPLICATION_URL https://developer.nvidia.com/cuda-zone
+    APPLICATION_URL https://rapids.ai/
 
     SYSTEM_NAME comet
     SYSTEM_SINGULARITY_VERSION 2.6.1
