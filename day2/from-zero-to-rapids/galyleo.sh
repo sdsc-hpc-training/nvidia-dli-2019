@@ -288,7 +288,7 @@ galyleo_launch() {
     echo "#SBATCH --account=${account}" >> "${job_script}"
   fi
   if [[ -n "${reservation}" ]]; then
-    echo "#SBATCH --reservation="${reservation}" >> "${job_script}"
+    echo "#SBATCH --reservation=${reservation}" >> "${job_script}"
   fi
   echo "#SBATCH --partition=${partition}" >> "${job_script}"
   echo "#SBATCH --nodes=${nodes}" >> "${job_script}"
