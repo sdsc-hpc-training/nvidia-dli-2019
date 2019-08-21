@@ -158,7 +158,7 @@ galyleo_launch() {
   local -i cpus_per_task=1
   local -i gpus_per_node=1
   local gpu_type='p100'
-  local time_limit='00:10:00'
+  local time_limit='02:00:00'
   local jupyter='jupyter'
   local image='/share/apps/gpu/singularity/images/rapids/rapids.simg'
   local workdir=''
