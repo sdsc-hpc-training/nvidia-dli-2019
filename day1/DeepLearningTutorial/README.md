@@ -20,6 +20,7 @@ The Jupyter HTML Notebook.
 This launches a Tornado based HTML Notebook Server that serves up an
 HTML5/Javascript Notebook client.
 
+[SNIP.....]
 
     To access the notebook, open this file in a browser:
         file:///home/etrain118/.local/share/jupyter/runtime/nbserver-72011-open.html
